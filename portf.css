@@ -207,3 +207,83 @@ body {
 .pc-java, .pc-java + div > div {
     width: 200px;
 }
+
+.projects-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.projects {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.project-cluster-left {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.project-cluster-right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+.project-childs {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    border: 2px solid #FF014F;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    div {
+        margin-right: 10px;
+    }
+
+    div > * {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    div:first-child img {
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 10px;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    a {
+        color: #FF014F;
+    }
+}
+
+.project-childs:hover {
+    box-shadow: #f13970 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+}
+
