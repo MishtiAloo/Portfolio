@@ -208,10 +208,11 @@ body {
     width: 200px;
 }
 
-.projects-title {
+.box-title {
     text-align: center;
     font-size: 30px;
     margin: 20px;
+    margin-top: 100px;
 }
 
 .projects {
