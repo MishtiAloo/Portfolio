@@ -14,23 +14,51 @@
     <nav class="navbar">
         <div class="navlogo"><img src="Asset/bsl.png" alt=""></div>
         <div class="navlinks-box">
+
             <div class="navlinks">
                 <p>Home</p>
             </div>
+
             <div class="navlinks">
                 <p>About</p>
             </div>
-            <div class="navlinks">
+
+            <div class="navlinks nav-projects">
                 <p>Projects</p>
                 <i class="fa-solid fa-angle-down"></i>
+                <div class="nav-hover-boxes"><p>Item1</p><p>Item2</p></div>
             </div>
-            <div class="navlinks">
+
+            <div class="navlinks nav-contact">
                 <p>Contact</p>
                 <i class="fa-solid fa-angle-down"></i>
+                <div class="nav-hover-boxes"><p>Item1</p><p>Item2</p></div>
+            </div>
+
+        </div>
+        <button onclick="showSlider()"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="slider-window" onclick="hideSlider()">
+            <!-- <div class="blur-box"></div> -->
+            <div class="main-slider" onclick="sliderClicked(event)">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
         </div>
-        <button><i class="fa-solid fa-bars"></i></button>
     </nav>
+
+    <div class="slider-window">
+        <div class="main-slider">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
 
     <!-- -------------------------------PROFILE----------------------------- -->
     <div class="profile">
@@ -366,11 +394,12 @@
     </div>
 
     <!-- -------------------------------FOOTER----------------------------- -->
-    <div>
+    <div class="footer">
         <p>contact me</p>
     </div>
 
     <!-- --------------------------JS file links---------------------------- -->
     <script src="hobbySelect.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
