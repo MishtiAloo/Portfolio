@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="edu.css">
     <link rel="stylesheet" href="hobby.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -41,6 +47,16 @@
         <div class="slider-window" onclick="hideSlider()">
             <!-- <div class="blur-box"></div> -->
             <div class="main-slider" onclick="sliderClicked(event)">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
                 <div class="box"></div>
                 <div class="box"></div>
                 <div class="box"></div>
@@ -394,8 +410,29 @@
     </div>
 
     <!-- -------------------------------FOOTER----------------------------- -->
-    <div class="footer">
-        <p>contact me</p>
+    <p class="box-title">Contact me</p>
+    <div class="contact-container">
+        <div class="drink">
+            <div class="drink-text">
+                <p id="txt1">Hey!! Let's talk over a cup of.....</p>
+                <div class="drink-txt">
+                    <p>Coffee</p>
+                    <p>Tea</p>
+                </div>
+                <div class="icons">
+                    <img src="Asset/coffee-1.png" alt="">
+                    <img src="Asset/tea.png" alt="">
+                </div>
+            </div>
+            <div class="drink-icon"></div>
+        </div>
+
+        <div class="grid-wrapper">
+            <input type="text" name="" id="txt" placeholder="Name">
+            <input type="email" name="" id="mail" placeholder="Email">
+            <textarea id="msg" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+            <button id="clk">Send</button>
+        </div>
     </div>
 
     <!-- --------------------------JS file links---------------------------- -->

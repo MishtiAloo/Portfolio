@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    width: 95%;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+    background-color: #171616;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.grid-wrapper {
+    flex: 1.5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-auto-rows: minmax(40px, auto);
+    justify-content: center;  
+
+    > * {
+        background-color: #171616;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid #3c3a3a;
+    }
+}
+
+#msg {
+    grid-column: span 2;
+}
+
+#clk {
+    grid-column: span 2;
+    width: 20%;
+    justify-self: center;
+}
+
+.drink {
+    flex: 1;
+    /* background-color: rgb(0, 4, 255); */
+}
+
+.drink-text {
+    color: white;
+    font-family: 'DynaPuff', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#txt1 {
+    font-size: 30px;
+    word-spacing: 8px;
+}
+
+.drink-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+.drink-txt p {
+    margin: 50px 0px 0px 0px;
+    font-size: 20px;
+    flex: 1;
+    align-self: center;
+}
+
+.icons {
+    display: flex;
+    padding: 30px;
+}
+
+.icons img {
+    flex: 1;
+    object-fit: contain;
+    width: 30%;
+    animation: lafalafi 2s ease-in-out 0s infinite;
+    cursor: pointer;
+}
+
+@keyframes lafalafi {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(0);}
+}
